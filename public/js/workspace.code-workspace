@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "images",
+			"path": "..\\..\\..\\images"
+		},
+		{
+			"name": "html",
+			"path": ".."
+		},
+		{
+			"name": "images",
+			"path": "..\\..\\..\\..\\AppData\\Local\\Temp\\360zip$Pic\\360$0\\飞机大战\\images"
+		},
+		{
+			"name": "sound",
+			"path": "..\\..\\..\\..\\Downloads\\飞机大战\\sound"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html"
+	}
+}

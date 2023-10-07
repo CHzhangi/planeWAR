@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        body{
+            background: #006666;
+        }
+        h1{
+            color: #FFF;
+            text-align: center;
+        }
+        .container{
+            margin: 100px auto;
+            width: 30%;
+        }
+        form{
+            background: #FFF;
+            height: 300px;
+            width: 100%;
+            border-radius: 10px;
+            position: relative;
+        }
+        label{
+            color: #000;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+        input{
+            text-align: left;
+            margin: 10px;
+        }
+        .input{
+            width: 80%;
+            height: 35px;
+            margin-left: 40px;
+        }
+        .checkbox{
+            margin-left: 30px;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .submit{
+            display: inline-block;
+            margin-top: 0;
+            margin-left:145px;
+            background: #000;
+            border: none;
+            color: #FFF;
+            height: 35px;
+            width: 100px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .left{
+            margin: 20px;
+        }
+        .right{
+            position: absolute;
+            right: 20px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="container">
+        <h1>用户登录</h1> 
+        <form method="POST" action="/add">
+            <br>
+            <label for="username">用户名</label><br>
+            <input type="text" name="username" id="username" class="input" value="" placeholder="用户名admin"><br>
+            <label for="password">密码</label><br>
+            <input type="password" name="password" id="password" class="input" value="" placeholder="密码admin">
+            <div class="checkbox">
+                <input type="checkbox" name="">
+                <span>记住密码</span>
+            </div>
+            <button type="submit" class="submit" action= >开始登录</button>
+            <br>
+            <a href="../" class="left">返回首页</a>
+            <a href="/register" class="right">注册账号</a>
+        </form>
+    </div>
+    <script>
+		
+
+
+    //  function submits(btn){
+    //     var objdbConn = new ActiveXObject("ADODB.Connection");
+    //     // DSN字符串
+    //     var strdsn = "Driver={SQL Server};SERVER=localhost;UID=sa;PWD=03197860616;DATABASE=websql";
+    //     // 打开数据源
+    //     objdbConn.Open(strdsn);
+    //     // 执行SQL的数据库查询
+    //     var objrs = objdbConn.Execute("SELECT * FROM xxbs");
+    //     console.log("成功连接")
+    //     // 获取字段数目
+    //     var fdCount = objrs.Fields.Count - 1;
+    //     // 检查是否有记录
+    //     if (!objrs.EOF){
+    //     document.write("<table border=1><tr>"); 
+    //     // 显示数据库的字段名称
+    //     for (var i=0; i <= fdCount; i++)
+    //     document.write("<td><b>" + objrs.Fields(i).Name + "</b></td>");
+    //     document.write("</tr>");
+    //     // 显示数据库内容
+    //     while (!objrs.EOF){
+    //     document.write("<tr>"); 
+    //     // 显示每笔记录的字段
+    //     for (i=0; i <= fdCount; i++)
+    //     document.write("<td valign='top'>" + objrs.Fields(i).Value + "</td>");
+    //     document.write("</tr>");
+    //     objrs.moveNext(); // 移到下一笔记录
+    //     }
+    //     document.write("</table>");
+    //     }
+    //     else
+    //     document.write("数据库内没有记录!<br>");
+    //     objrs.Close(); // 关闭记录集合
+    //     objdbConn.Close(); // 关闭数据库链接
+    //     alert("用ssss！");
+    //     var userName = document.getElementById("username").value;
+    //     var pwd = document.getElementById("pwd").value;
+    //     console.log(userName)
+    //     if (userName == "admin" && pwd == "admin") {
+    //        alert("用户名和密码正确，但是连接服务器失败！");
+    //     }
+    //     else {
+    //         alert("用户名或密码不正确！");
+    //     }
+    // };
+    // </script>
+</body>
+ 
+</html>

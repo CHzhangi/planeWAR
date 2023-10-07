@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#Hpblock{
+    width: 1200px;
+    height: 30px;
+    display: block;
+    clear: both;
+}
+#block{
+    width: 1200px;
+    height: 30px;
+    display: block;
+    clear:both;
+}
+#block p{
+    padding-left: 0px;
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+    font-size: 20px;
+    color: coral;
+}
+#bt{
+    background: url('../images/again.png');
+    background-size: 110px 30px;
+    
+}
+
+#ds{
+    
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top:550px;
+    left:1203px;
+    display: block;
+}
+#hptitle{
+    left:50px;
+    width:110px;
+    height: 25px;
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+    font-size: 20px;
+    float: left;
+
+}
+#jidihptitle{
+    left:50px;
+    width:110px;
+    height: 25px;
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+    font-size: 20px;
+    float: right;
+}
+body{
+    width: 1600px;
+    height: 1000px;
+
+}
+#game{
+    width: 1200px;
+    height: 800px;
+    float:left;
+}
+
+.pp1{
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top:250px;
+    left:1200px;
+    display: block;
+
+}
+
+#fenshu {
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top:290px;
+    left:1200px;
+    display: block;
+
+}
+.planelevel{
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top:450px;
+    left:1200px;
+    display: block;
+
+}
+
+#planelevel_n{
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top:490px;
+    left:1200px;
+    display: block;
+
+}
+.level{
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top:350px;
+    left:1200px;
+    display: block;
+
+}
+#level_n {
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top:390px;
+    left:1200px;
+    display: block;
+
+}
+
+#Begin{
+    width: 100%;
+    height: 100%;
+    background-color: #af2649;
+    background: url('bk.jpg') no-repeat;
+    background-size: 1200px 800px;
+    display: block;
+}
+#addition{
+    width: 400px;
+    height: 800px;
+    float:right;
+    display: block;
+}
+.score{
+    position:absolute;
+    left: 1200px;
+
+
+}
+#HEAD{   
+    font-size: 80px;
+    position: relative;
+    left:440px;
+    top:130px;
+    color: coral;
+    text-decoration: None;
+    font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+}
+#Begin :hover{
+    color: rgb(255, 127, 133);
+
+}
+.gamestart{
+
+    background:url() no-repeat;
+    background-color: rgb(24, 24, 23);
+    background-size: 50% 50%;
+}
+#gamestart span{
+    width: 100px;
+    height: 40px;
+    display: block;
+    /* 边框样式、颜色、宽度 */
+    border: 3px solid #af2649;
+    /* 给边框添加圆角 */
+    border-radius: 6px;
+    text-align:center;
+    line-height: 32px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    position:absolute;
+    left:550px;
+    cursor: pointer;
+    /* 字母转大写 */
+    color: rgb(204, 32, 32);
+    
+
+}
+.login{
+    top:400px;
+
+}
+.signup{
+    top:500px;
+
+}
+#gamestart span:hover {
+    background-color: #008CBA;
+    color: white;
+
+
+}
+
+.gameenter{
+    width: 100%;
+    height: 100%;
+    background: url(../images/back.jpg);
+    background-size: 1200px 800px;
+    position: relative;
+    display: block;
+}
+
+.gameenter2{
+    background: url(../images/back_2.jpg);
+}
+
+.gameenter3{
+    background: url(../images/back.jpg);
+}
+
+
+#myplane {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    left:560px;
+    bottom:0px;
+}
+.my1plane {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    left:560px;
+    bottom:500px;
+    background: url(../images/me1.png) no-repeat left top;
+    background-size: 80px 100px;
+}
+.my2plane{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    left:560px;
+    bottom:500px;
+    background: url(../images/meplane_2.png) no-repeat left top;
+    background-size: 80px 100px;
+
+}
+.my3plane{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    left:560px;
+    bottom:500px;
+    background: url(../images/meplane_3.png) no-repeat left top;
+    background-size: 80px 100px;
+
+}
+.my1plane {
+    background: url(../images/me2.png) no-repeat left top;
+    background-size: 80px 100px;
+}
+#myplane img{
+    width:80px;
+    height: 100px;
+
+}
+.bullet_ruin{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: url(../images/bomb.png);
+    background-size: 15px 15px;
+}
+.bullet{
+    width: 5px;
+    height: 11px;
+    position:absolute;
+    background: url(../images/bullet1.png);
+}
+.bullet_bomb2{
+    width: 20px;
+    height: 30px;
+    position:absolute;
+    background: url(../images/bullet_bomb2.png);
+    background-size: 20px 30px;
+}
+.bullet_pro{
+
+    width: 5px;
+    height: 11px;
+    position:absolute;
+    background: url(../images/bullet2.png),linear-gradient(#f00, #c10);
+
+    /* background: url(img/1.jpg),red; */
+    
+    background-blend-mode: lighten;
+}
+.bullet_pro2{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background: url(../images/bullet_2.png);
+    background-size: 15px 15px;
+
+    /* background: url(img/1.jpg),red; */
+    
+}
+.plane{
+    width: 57px;
+    height: 43px;
+    position: absolute;
+    background:url(../images/enemy1.png);
+
+}
+
+.bigplane{
+    width: 69px;
+    height: 99px;
+    position: absolute;
+    background:url(../images/enemy2.png);
+
+
+}
+
+.bossplane{
+    width: 169px;
+    height: 258px;
+    position: absolute;
+    background:url(../images/enemy3_n1.png);
+}
+.enemy1_down1{
+    background:url(../images/enemy1_down1.png);
+}
+.my1plane_down1{
+    background:url(../images/me_destroy_3.png);
+    background-size: 80px 100px;
+}
+.enemy2_down1{
+    background:url(../images/enemy2_down1.png);
+}
+.enemy3_down1{
+    background:url(../images/enemy3_down5.png);
+}
+.enemy1_down2{
+    background:url(../images/enemy1_down1.png);
+}
+.enemy1_down3{
+    background:url(../images/enemy1_down1.png);
+}
+.enemy1_down4{
+    background:url(../images/enemy1_down3.png);
+
+    /* background: url(img/1.jpg),red; */
+    
+    background-blend-mode: lighten;;
+}
+.enemy2_down4{
+    background:url(../images/enemy2_down3.png);
+
+    /* background: url(img/1.jpg),red; */
+    
+    background-blend-mode: lighten;;
+}
+.enemy3_down4{
+    background:url(../images/enemy3_down5.png);
+
+    /* background: url(img/1.jpg),red; */
+    
+    background-blend-mode: lighten;;
+}

@@ -1,0 +1,85 @@
+<html lang="en">
+<style>
+
+progress{
+    width:400px;
+    height:20px;
+    border-radius:5px 5px 5px 5px;
+}
+progress#jidihp{
+    width:400px;
+    height:20px;
+    float: right;
+    border-radius:5px 5px 5px 5px;
+}
+progress::-webkit-progress-bar{
+    /*进度条背景样式*/
+    background:white;
+    border-radius:5px 5px 5px 5px;
+}
+progress#myhp::-webkit-progress-value{
+    /*进度条进度样式*/
+    background:rgb(223, 11, 11);
+    border-radius:5px 5px 5px 5px;
+}
+progress#jidihp::-webkit-progress-value{
+    /*进度条进度样式*/
+    background:rgb(205, 227, 5);
+    border-radius:5px 5px 5px 5px;
+}
+</style>
+<head>
+    <meta charset="utf-8">
+    <title>plane war</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/main.js"></script>
+    <script src="public/js/plane.js"></script>
+    <script src="public/js/meplane.js"></script>
+    <script src="public/js/bullet.js"></script>
+</head>
+<body>
+    <!--准备加上登录 界面 另设div-->
+    <audio id="bgm" autoplay="autoplay" utostart="true" controls="controls"loop="loop" preload="auto"
+            	src="video/rtr.mp3">
+      		你的浏览器版本太低，不支持audio标签
+	</audio>
+    <div id="game">    
+        <div class="gameenter" id="gameenterr">           
+        </div>
+    </div>
+    <div id="addition">     
+            <div class="pp1">当前得分为:</div>
+            <div  id="fenshu">0</div>
+            <div class="level">当前关卡等级:</div>
+            <div  id="level_n">第一关</div>
+            <div class="planelevel">当前战机等级:</div>
+            <div  id="planelevel_n">⭐</div>
+    </div>
+
+    <div id="block">
+        <p>============================================基地===============================================</p>
+    </div>
+    <div id="Hpblock">
+        <div id="hptitle">战机血量:</div>
+        <progress value="100" max="100" id="myhp"></progress>
+        <progress value="100" max="100" id="jidihp"></progress>
+        <div id="jidihptitle">基地血量:</div>
+        <button type="button" id="ds" onclick="location.reload();">重新开始</button>
+    </div>
+</body>
+<script>
+    $(function () {
+		$.get('/scyj2', function (data) {
+			for (let list of data) {
+                let table = '<tr class="cardLayout"><td>';
+                let s = '</td><td>';
+                for (let ele of list) {
+                    table += (ele + s);
+                }
+                table += '</td></tr>';
+                $("#record2").append(table);
+            }
+        });       
+    });
+</script>
+</html>
